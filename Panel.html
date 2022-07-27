@@ -1,0 +1,992 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css">
+<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title> Panel - صفحه  پنل مشتری</title>
+</head>
+
+<body class="bg-light">
+    <!-- Start Header -->
+    <header class="bg-white">
+		<div class="header-one">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-12 col-lg-3 text-center text-lg-right">
+                    <a href="index.html"> <img src="img/Group 1.png" class="img-fluid" alt="logo"></a>
+                </div> 
+                <div class="col-12 col-lg-6 text-center ">
+                    <form class="form-group search-top my-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bg-transparent"> جستجو</div>
+                            </div>
+                            <input type="search" class="form-control" placeholder="نام محصول مورد نظر خود را جستجو کنید...">
+                        </div>
+						<a href="#" class="search-icon" > <i class="fas fa-search align-middle"></i> </a>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="buttons-top d-flex justify-content-end justify-content-center">
+                        <a href="Login.html" class="sing ml-4 py-1 px-2"> <i class="fas fa-sign-in-alt align-middle ml-1"></i> ورود/ثبت نام</a>
+                        <a href="Cart.html" class="shop py-1 px-2"> <i class="fas fa-shopping-cart align-middle ml-1"></i> سبد خرید</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		</div>
+ 		<div class="container">
+			<nav class="navbar navbar-light navbar-expand-lg">
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center menu" id="menu">
+					<ul class="navbar-nav text-center mb-2">
+						<li class="nav-item ml-3">
+							<a href="index.html" class="nav-link px-3"> خانه</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a href="Category.html" class="nav-link px-3"> دسته بندی محصولات</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a href="Asked Questions.html" class="nav-link px-3"> سوالات متداول</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a href="Archive Blog.html" class="nav-link px-3"> مقالات</a>
+						</li>
+						<li class="nav-item ml-3">
+							<a href="About Us.html" class="nav-link px-3"> درباره ما</a>
+						</li>
+						<li class="nav-item">
+							<a href="Contact Us.html" class="nav-link px-3"> تماس با ما</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+    </header>
+	
+	<!-- Start Main -->
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-3">
+					<div class="card border-0 panel mt-4">
+						<div class="card-body">
+							<img src="img/Group 1143.png" class="img-fluid mx-auto d-block mb-3" alt="imgpanel">
+							<small class="d-block text-center"> ایمان بیاتی</small>
+						</div>
+						<div class="card-footer border-0 bg-transparent d-flex justify-content-between py-3">
+							<a href="#change" data-toggle="modal"><i class="fas fa-exchange-alt align-middle ml-1"></i> تغییر رمز عبور</a>
+							<a href="#out" data-toggle="modal"><i class="fas fa-power-off align-middle ml-1"></i> خروج از حساب کاربری</a>
+						</div>
+					</div>
+					<div class="modal fade mymodal" id="change">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header ">
+									<h5 class="modal-title"> تغییر رمز عبور</h5>
+									<div class="text-left mt-2">
+										<button type="button" class="close" data-dismiss="modal"> &times; </button>
+									</div>
+								</div>
+								<div class="modal-body">
+									<form class="form-group" action="">
+										<input type="password" class="form-control" placeholder="لطفا رمز عبور جدید خود را وارد نمایید . . .">
+										<input type="password" class="form-control my-3" placeholder="لطفا دوباره رمز عبور جدید خود را وارد نمایید . . .">
+										<div class="text-left">
+											<button class="btn px-3 py-2">  ثبت و تغییر رمز<i class="fas fa-chevron-left align-middle mr-2"></i></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade mymodal" id="out">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header ">
+									<h5 class="modal-title"> خدانگهدار</h5>
+									<div class="text-left mt-2">
+										<button type="button" class="close" data-dismiss="modal"> &times; </button>
+									</div>
+								</div>
+								<div class="modal-body text-center">
+									<small class="text-center" style="font-size: 16px;">
+										شما با موفقیت از سامانه خارج شدید. به امید دیدار <i class="fas fa-smile-wink align-middle mr-1"></i>
+									</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 panel-menu mt-4">
+						<div class="card-header border-0 shadow-none bg-transparent p-0 mb-2">
+							<p class="d-inline-block px-3 py-1 mr-3 text-white">
+								دسترسی های کاربری
+							</p>
+						</div>
+						<div class="card-body p-0">
+							<ul class="nav flex-column p-0 px-2 pb-3">
+								<li class="nav-item mb-3">
+									<a href="#profile" class="nav-link active" data-toggle="tab">
+										<i class="fas fa-user-alt align-middle ml-2"> </i>پروفایل کاربر
+									</a>
+								</li>
+								<li class="nav-item mb-3">
+									<a href="#cart" class="nav-link" data-toggle="tab">
+										<i class="fas fa-shopping-cart align-middle ml-2"> </i>سفارشات من
+									</a>
+								</li>
+								<li class="nav-item mb-3">
+									<a href="#favorite" class="nav-link" data-toggle="tab">
+										<i class="fas fa-heart align-middle ml-2"> </i>علاقه مندی ها
+									</a>
+								</li>	
+								<li class="nav-item mb-3">
+									<a href="#address" class="nav-link" data-toggle="tab">
+										<i class="fas fa-map-marker align-middle ml-2"> </i> آدرس ها
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#personal" class="nav-link" data-toggle="tab">
+										<i class="fas fa-info align-middle ml-2"> </i>اطلاعات شخصی
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-9">
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="profile">
+							<div class="card border-0 profile-card my-4">
+								<div class="card-header border-0 shadow-none bg-transparent p-0 mb-2">
+									<p class="d-inline-block px-3 py-1 mr-3 text-white">اطلاعات شخصی</p>
+								</div>
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center border-bottom pb-4 info-user">
+										<div class="flex-column">
+											<p>نام و نام خانوادگی :</p>
+											<p>ایمان بیاتی </p>
+										</div>
+										<div class="flex-column mr-1">
+											<p>پست الکترونیکی :</p>
+											<p>bayatiiman87@gmail.com </p>
+										</div>	
+										<div class="flex-column">
+											<p>شماره تلفن همراه :</p>
+											<p>09912311015 </p>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between align-items-center border-bottom py-4 info-user">
+										<div class="flex-column">
+											<p>عضویت در خبرنامه :</p>
+											<p style="color: #2E7D32;">بله </p>
+										</div>
+										<div class="flex-column ml-5 mr-n4">
+											<p>دریافت پیامک :</p>
+											<p style="color: #FF4C29;">خیر </p>
+										</div>	
+										<div class="flex-column ml-4">
+											<p>دریافت ایمیل :</p>
+											<p style="color: #2E7D32;">بله </p>
+										</div>
+									</div>
+									<div class="d-flex justify-content-between align-items-center pt-4 info-user">
+										<div class="flex-column">
+											<p>کد ملی :</p>
+											<p>0024359181 </p>
+										</div>
+										<div class="flex-column mr-n5">
+											<p>تاریخ عضویت :</p>
+											<p>197/7/20 </p>
+										</div>	
+										<div class="flex-column">
+											<p>تاریخ آخرین ورود :</p>
+											<p>1400/9/25 </p>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer border-0 text-center">
+									<a href="#"> <i class="fas fa-pencil-alt align-middle ml-2"></i>ویرایش اطلاعات شخصی</a>
+								</div>
+							</div>	
+						</div>
+						<div class="tab-pane fade" id="cart">
+							<div class="card border-0 profile-card my-4">
+								<div class="card-header border-0 shadow-none bg-transparent p-0 mb-2">
+									<p class="d-inline-block px-3 py-1 mr-3 text-white">سفارشات من</p>
+								</div>
+								<div class="card-body">
+									<table class="table text-center table-striped table-borderless table-responsive-md">
+										<thead>
+											<tr>
+												<th>
+													ردیف
+												</th>
+												<th>
+													شماره سفارش 
+												</th>
+												<th>
+													وضعیت سفارش
+												</th>
+												<th>
+													مبلغ سفارش
+												</th>
+												<th>
+													 وضعیت پرداخت
+												</th>
+												<th>
+													مشاهده
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>
+													1
+												</th>
+												<td>
+													12003256
+												</td>
+												<td style="color: #2E7D32; font-weight: 600;">
+													تحویل داده شده
+												</td>
+												<td>
+													350.000
+												</td>
+												<td style="color: #FF4C29; font-weight: 600;">
+													پرداخت شده
+												</td>
+												<td>
+													<a href="#">محصول</a>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													2
+												</th>
+												<td>
+													12003256
+												</td>
+												<td style="color: #2E7D32; font-weight: 600;">
+													تحویل داده شده
+												</td>
+												<td>
+													350.000
+												</td>
+												<td style="color: #FF4C29; font-weight: 600;">
+													پرداخت شده
+												</td>
+												<td>
+													<a href="#">محصول</a>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													3
+												</th>
+												<td>
+													12003256
+												</td>
+												<td style="color: #FBC02D; font-weight: 600;">
+													در حال ارسال
+												</td>
+												<td>
+													350.000
+												</td>
+												<td style="color: #FF4C29; font-weight: 600;">
+													پرداخت شده
+												</td>
+												<td>
+													<a href="#">محصول</a>
+												</td>
+											</tr>
+											<tr>
+												<th>
+													4
+												</th>
+												<td>
+													12003256
+												</td>
+												<td style="color: #2E7D32; font-weight: 600;">
+													تحویل داده شده
+												</td>
+												<td>
+													350.000
+												</td>
+												<td style="color: #FBC02D; font-weight: 600;">
+													پرداخت قسطی
+												</td>
+												<td>
+													<a href="#">محصول</a>
+												</td>
+											</tr>	
+											<tr>
+												<th>
+													5
+												</th>
+												<td>
+													12003256
+												</td>
+												<td style="color: #2E7D32; font-weight: 600;">
+													تحویل داده شده
+												</td>
+												<td>
+													350.000
+												</td>
+												<td style="color: #FF4C29; font-weight: 600;">
+													پرداخت شده
+												</td>
+												<td>
+													<a href="#">محصول</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>	
+						</div>
+						<div class="tab-pane fade" id="favorite">
+							<div class="card border-0 favorite-card my-4">
+								<div class="card-header border-0 shadow-none bg-transparent p-0 mb-2">
+									<p class="d-inline-block px-3 py-1 mr-3 text-white">علاقه مندی ها</p>
+								</div>
+								<div class="card-body">
+									<a href="#">
+										<div class="d-flex justify-content-between align-items-center info-favorite border-bottom pb-4">
+											<div class="d-flex">
+												<img src="img/Image 25.png" class="img-fluid align-self-start ml-2" alt="imgfavorite">
+												<div class="flex-column mt-1">
+													<p class="d-block"> دکمه سرآستین آدیداس کد 2510</p>
+													<small class="d-block">  190.000</small>
+												</div>
+											</div>
+											<a href="#"><i class="fas fa-trash-alt align-middle trash"></i></a>
+										</div>
+									</a>
+									<a href="#">
+										<div class="d-flex justify-content-between align-items-center info-favorite border-bottom py-4">
+											<div class="d-flex">
+												<img src="img/Image 25.png" class="img-fluid align-self-start ml-2" alt="imgfavorite">
+												<div class="flex-column mt-1">
+													<p class="d-block"> دکمه سرآستین آدیداس کد 2510</p>
+													<small class="d-block">  190.000</small>
+												</div>
+											</div>
+											<a href="#"><i class="fas fa-trash-alt align-middle trash"></i></a>
+										</div>
+									</a>
+									<a href="#">
+										<div class="d-flex justify-content-between align-items-center info-favorite border-bottom py-4">
+											<div class="d-flex">
+												<img src="img/Image 25.png" class="img-fluid align-self-start ml-2" alt="imgfavorite">
+												<div class="flex-column mt-1">
+													<p class="d-block"> دکمه سرآستین آدیداس کد 2510</p>
+													<small class="d-block">  190.000</small>
+												</div>
+											</div>
+											<a href="#"><i class="fas fa-trash-alt align-middle trash"></i></a>
+										</div>
+									</a>
+									<a href="#">
+										<div class="d-flex justify-content-between align-items-center info-favorite border-bottom py-4">
+											<div class="d-flex">
+												<img src="img/Image 25.png" class="img-fluid align-self-start ml-2" alt="imgfavorite">
+												<div class="flex-column mt-1">
+													<p class="d-block"> دکمه سرآستین آدیداس کد 2510</p>
+													<small class="d-block">  190.000</small>
+												</div>
+											</div>
+											<a href="#"><i class="fas fa-trash-alt align-middle trash"></i></a>
+										</div>
+									</a>
+									<a href="#">
+										<div class="d-flex justify-content-between align-items-center info-favorite pt-4">
+											<div class="d-flex">
+												<img src="img/Image 25.png" class="img-fluid align-self-start ml-2" alt="imgfavorite">
+												<div class="flex-column mt-1">
+													<p class="d-block"> دکمه سرآستین آدیداس کد 2510</p>
+													<small class="d-block">  190.000</small>
+												</div>
+											</div>
+											<a href="#"><i class="fas fa-trash-alt align-middle trash"></i></a>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="address">
+							<div class="card border-0 address-card mt-4">
+								<div class="card-header border-0 shadow-none bg-transparent p-0 mb-2">
+									<p class="d-inline-block px-3 py-1 mr-3 text-white">آدرس  ها</p>
+								</div>
+								<div class="card-body">
+									<table class="table table-striped table-borderless table-responsive-md text-center">
+										<thead>
+											<div class="d-flex text-center align-items-center justify-content-center mb-3 col-address">
+												<small> نمایش کامل آدرس:</small>
+												<small class="mr-2">
+													تهران، منطقه 18، شهرک ولیعصر، خیابان حیدری شمالی، کوچه نصیری نجات، پلاک 34، طبقه اول				
+												</small>
+											</div>
+											<tr>
+												<th> استان</th>
+												<th> منطقه</th>
+												<th> محله</th>
+												<th> خیابان</th>
+												<th> کوچه</th>
+												<th> پلاک</th>
+												<th> واحد</th>
+												<th> طبقه</th>
+												<th> عملیات</th>
+											</tr>
+										</thead>
+										<tbody>
+											<td>تهران</td>
+											<td>18</td>
+											<td>شهرک ولیعصر</td>
+											<td>حیدری شمالی</td>
+											<td>نصیری نجات</td>
+											<td>34</td>
+											<td>1</td>
+											<td>1</td>
+											<td><a href="#edit" data-toggle="modal" class="edit-address"><i class="fas fa-edit align-middle ml-2"></i> ویرایش آدرس</a></td>
+										</tbody>
+									</table>
+					<div class="modal fade mymodal" id="edit">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header ">
+									<h5 class="modal-title"> ویرایش آدرس</h5>
+									<div class="text-left mt-2">
+										<button type="button" class="close" data-dismiss="modal"> &times; </button>
+									</div>
+								</div>
+								<div class="modal-body">
+									<form class="form-group edit-modal" action="">
+										<div class="row">
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> استان</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="تهران">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> منطقه</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="18">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 my-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> محله</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="شهرک ولیعصر">
+												</div>
+											</div>	
+											<div class="col-12 col-lg-6 my-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> خیابان</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="حیدری شمالی">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> کوچه</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="نصیری نجات">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> پلاک</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="34">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 mt-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> واحد</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value=" 1">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 mt-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> طبقه</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value=" 1">
+												</div>
+											</div>
+
+										</div>
+										<div class="text-left mt-4 mb-n3">
+											<button class="btn px-3 py-2 text-white">
+												ثبت و تغییر اطلاعات<i class="fas fa-chevron-left align-middle mr-2"></i>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade mymodal" id="edit2">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header ">
+									<h5 class="modal-title"> ویرایش آدرس</h5>
+									<div class="text-left mt-2">
+										<button type="button" class="close" data-dismiss="modal"> &times; </button>
+									</div>
+								</div>
+								<div class="modal-body">
+									<form class="form-group edit-modal" action="">
+										<div class="row">
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> استان</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="تهران">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> منطقه</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="18">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 my-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> محله</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="شهرک ولیعصر">
+												</div>
+											</div>	
+											<div class="col-12 col-lg-6 my-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> خیابان</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="حیدری شمالی">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> کوچه</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="نصیری نجات">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> پلاک</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="34">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 mt-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> واحد</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value=" 1">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 mt-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> طبقه</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value=" 1">
+												</div>
+											</div>
+
+										</div>
+										<div class="text-left mt-4 mb-n3">
+											<button class="btn px-3 py-2 text-white">
+												ثبت و تغییر اطلاعات<i class="fas fa-chevron-left align-middle mr-2"></i>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+									<hr>
+									<table class="table table-striped table-borderless table-responsive-md text-center">
+										<thead>
+											<div class="d-flex text-center align-items-center justify-content-center mb-3 col-address">
+												<small> نمایش کامل آدرس:</small>
+												<small class="mr-2">
+													تهران، منطقه 18، شهرک ولیعصر، خیابان حیدری شمالی، کوچه نصیری نجات، پلاک 34، طبقه اول				
+												</small>
+											</div>
+											<tr>
+												<th> استان</th>
+												<th> منطقه</th>
+												<th> محله</th>
+												<th> خیابان</th>
+												<th> کوچه</th>
+												<th> پلاک</th>
+												<th> واحد</th>
+												<th> طبقه</th>
+												<th> عملیات</th>
+											</tr>
+										</thead>
+										<tbody>
+											<td>تهران</td>
+											<td>18</td>
+											<td>شهرک ولیعصر</td>
+											<td>حیدری شمالی</td>
+											<td>نصیری نجات</td>
+											<td>34</td>
+											<td>1</td>
+											<td>1</td>
+											<td><a href="#edit2" data-toggle="modal" class="edit-address"><i class="fas fa-edit align-middle ml-2"></i> ویرایش آدرس</a></td>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="personal">
+							<div class="card border-0 personal-card mt-4">
+								<div class="card-header border-0 shadow-none bg-transparent p-0 mb-2">
+									<p class="d-inline-block px-3 py-1 mr-3 text-white">اطلاعات شخصی</p>
+								</div>
+								<div class="card-body">
+									<form action="" class="personal-form form-group">
+										<div class="row">
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> نام</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="ایمان">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> نام خانوادگی</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="بیاتی">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6 my-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> شماره تماس</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="09912311015">
+												</div>
+											</div>	
+											<div class="col-12 col-lg-6 my-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> پست الکترونیکی</small>
+														</div>
+													</div>
+													<input class="form-control" type="email" value="bayatiiman87@gmail.com">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> کد ملی</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="0024359181">
+												</div>
+											</div>
+											<div class="col-12 col-lg-6">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> کد پستی</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="1373615761">
+												</div>
+											</div>
+											<div class="col-12 mt-3">
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">
+															<small> آدرس</small>
+														</div>
+													</div>
+													<input class="form-control" type="text" value="	تهران، منطقه 18، شهرک ولیعصر، خیابان حیدری شمالی، کوچه نصیری نجات، پلاک 34، طبقه اول">
+												</div>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between flex-wrap mt-3 radio">
+											<div class="flex-column text-center">
+												<p> عضویت در خبر نامه</p>
+												<div class=" custom-control custom-radio custom-control-inline mr-n4">
+													<input type="radio" class="custom-control-input" name="new" id="news" value="new">
+													<label class="custom-control-label " for="news"><small class="mr-4">بلی</small> </label>
+												</div>	
+												<div class=" custom-control custom-radio custom-control-inline mr-n3">
+													<input type="radio" class="custom-control-input" name="new" id="news2" value="new">
+													<label class="custom-control-label " for="news2"><small class="mr-4">خیر</small> </label>
+												</div>
+											</div>
+											<div class="flex-column text-center">
+												<p> دریافت پیامک</p>
+												<div class=" custom-control custom-radio custom-control-inline mr-n4">
+													<input type="radio" class="custom-control-input" name="sms" id="sms" value="sms">
+													<label class="custom-control-label " for="sms"><small class="mr-4">بلی</small> </label>
+												</div>	
+												<div class=" custom-control custom-radio custom-control-inline mr-n3">
+													<input type="radio" class="custom-control-input" name="sms" id="sms2" value="sms">
+													<label class="custom-control-label " for="sms2"><small class="mr-4">خیر</small> </label>
+												</div>
+											</div>
+											<div class="flex-column text-center">
+												<p> دریافت ایمیل</p>
+												<div class=" custom-control custom-radio custom-control-inline mr-n4">
+													<input type="radio" class="custom-control-input" name="email" id="email" value="email">
+													<label class="custom-control-label " for="email"><small class="mr-4">بلی</small> </label>
+												</div>	
+												<div class=" custom-control custom-radio custom-control-inline mr-n3">
+													<input type="radio" class="custom-control-input" name="email" id="email2" value="email">
+													<label class="custom-control-label " for="email2"><small class="mr-4">خیر</small> </label>
+												</div>
+											</div>
+										</div>
+										<div class="text-left mt-4 mb-n3">
+											<button class="btn px-3 py-2 text-white">
+												ثبت و تغییر اطلاعات<i class="fas fa-chevron-left align-middle mr-2"></i>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-12 col-lg-8 contact">
+					<img src="img/Group 1.png" class="img-fluid" alt="logo-down">
+					<p class="d-block text-muted my-3">
+						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه. چاپگرها و متون بلکه. چاپگرها و متون بلکه. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی درکتابهای زیادی درکتابهای زیادی درکتابهای زیادی درکتابهای زیادی درکتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
+					</p>
+					<div class="d-flex flex-column flex-lg-row text-center text-lg-right">
+						<div class="card border-0 bg-transparent">
+							<div class="card-body p-2">
+								<small class="d-block text-muted mb-1"> شیفت کاری صبح از ساعت 7:00 تا 18:00</small>
+								<small class="d-block text-muted"> شیفت کاری صبح از ساعت 7:00 تا 18:00</small>
+							</div>
+						</div>
+						<div class="card border-bottom-0 border-top-0 bg-transparent my-3 my-lg-0 mx-lg-3">
+							<div class="card-body p-2">
+								<small class="d-block text-muted mb-1"> شیفت کاری صبح از ساعت 7:00 تا 18:00</small>
+								<small class="d-block text-muted"> شیفت کاری صبح از ساعت 7:00 تا 18:00</small>
+							</div>
+						</div>
+						<div class="card border-0 bg-transparent">
+							<div class="card-body p-2">
+								<small class="d-block text-muted mb-1"> شیفت کاری صبح از ساعت 7:00 تا 18:00</small>
+								<small class="d-block text-muted"> شیفت کاری صبح از ساعت 7:00 تا 18:00</small>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-start mt-5">
+						<a href="#" class="flex-grow-1 text-white px-3 py-2 masenger1 ">
+							<div class="d-flex">
+								<span> <i class="fab fa-telegram-plane align-middle fa-2x"></i></span>
+								<h6 class="d-block mr-2 mt-2"> تلگرام همیار مارکت</h6>
+							</div>
+						</a>
+						<a href="#" class="flex-grow-1 text-white px-3 py-2 mx-3 my-4 my-lg-0 masenger2 ">
+							<div class="d-flex">
+								<span> <i class="fab fa-instagram align-middle  fa-2x"></i></span>
+								<h6 class="d-block mr-2 mt-2"> اینستاگرام همیار مارکت</h6>
+							</div>
+						</a>
+						<a href="#" class="flex-grow-1 text-white px-3 py-2 masenger3 ">
+							<div class="d-flex">
+								<span> <i class="fab fa-whatsapp align-middle  fa-2x"></i></span>
+								<h6 class="d-block mr-2 mt-2"> واتساپ همیار مارکت</h6>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 my-3 my-lg-0">
+					<form class="new-form">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text">
+									<small class="d-block"> عضویت در خبرنامه</small>
+								</div>
+							</div>
+							<input type="email" class="form-control" placeholder="لطفا ایمیل خود را وارد کنید . . .">
+						</div>
+						<button class="btn bg-transparent"> ارسال</button>
+					</form>
+					<div class="d-flex flex-column flex-lg-row my-3 align-items-center">
+						<div>
+							<img src="img/_2973266085536.png" class="img-fluid d-block" alt="google">
+							<img src="img/_2973266085536.png" class="img-fluid d-block" alt="google">
+						</div>
+						<div>
+							<img src="img/_2973266085536.png" class="img-fluid d-block" alt="google">
+							<img src="img/_2973266085536.png" class="img-fluid d-block" alt="google">
+						</div>
+					</div>
+					<div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+						<div class="card border-0 enamad">
+							<div class="card-body">
+								<img src="img/Group 706.png" class="img-fluid d-block pb-2" alt="enamad">
+								<small > نماد اعتماد الکترونیک</small>
+							</div>
+						</div>	
+						<div class="card border-0 enamad mt-2 mt-lg-0">
+							<div class="card-body">
+								<img src="img/Group 706.png" class="img-fluid d-block pb-2" alt="enamad">
+								<small> نماد اعتماد الکترونیک</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<!-- End Main -->
+	
+	
+	<!-- Start Footer -->
+	<footer class="mt-5">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-3 text-center text-lg-right my-4">
+						<p class="text-white"> دسته بندی محصولات :</p>
+						<a href="#" class="d-block mb-3"> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3"> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block "> لباس های مردانه</a>
+					</div>
+					<div class="col-12 col-lg-3 text-center text-lg-right my-4">
+						<p class="text-white"> دسته بندی محصولات :</p>
+						<a href="#" class="d-block mb-3"> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3"> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block "> لباس های مردانه</a>
+					</div>
+					<div class="col-12 col-lg-3 text-center text-lg-right my-4">
+						<p class="text-white"> دسته بندی محصولات :</p>
+						<a href="#" class="d-block mb-3"> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3"> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block mb-3 "> لباس های مردانه</a>
+						<a href="#" class="d-block"> لباس های مردانه</a>
+					</div>
+					<div class="col-12 col-lg-3 text-center text-lg-right my-4 ">
+						<p class="text-end"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهو
+							م از صنعت چاپ و با استفاده از طراحان ون بلکه روزنامه و مجله در ستون و سطرآنچنان کهگرافیک است.
+							چاپگرها و متون بلکه  راحان ون بلکه روزنامه وروزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکن
+							ولوژی مورد ون بلکه روزنامه و مجله در ستون و سطرآنچنان که نیاز و کاربردهای متنوع
+							ولوژی مورد ون بلکه روزنامه و مجله در ستون و سطرآنچنان که نیاز و کاربردهای متنوع با هد
+							 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center py-4">
+						<p>استفاده از منابع وب سایت با ذکر منبع بلامانع است. کلیه حقوق وب سایت فروشگاه اینترنتی همیارمارکت ، محفوظ میباشد. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- End Footer -->
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/main.js"></script>
+</html>
